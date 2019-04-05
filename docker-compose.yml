@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+  docker-blackbox:
+    image: prom/blackbox-exporter:latest
+    container_name: docker-blackbox
+    ports:
+      - "9115:9115"
+    volumes:
+      - /opt/docker/docker-prometheus-blackbox/config.yml:/etc/blackbox_exporter/config.yml
