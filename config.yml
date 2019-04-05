@@ -9,6 +9,13 @@ modules:
     prober: http
     http:
       method: POST
+  tcp_cert:
+    prober: tcp
+    timeout: 5s
+    tcp:
+      tls: true
+      tls_config:
+         insecure_skip_verify: true
   tcp_connect:
     prober: tcp
   pop3s_banner:
