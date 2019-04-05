@@ -14,7 +14,7 @@ modules:
     timeout: 5s
     tcp:
       tls: true
-      prefered_ip_protocol: ip4
+      preferred_ip_protocol: ip4
       tls_config:
          insecure_skip_verify: true
   tcp_connect:
